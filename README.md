@@ -2,12 +2,11 @@
 - Designed model to monitor the illegal waste dumping activity using the Caffe machine learning algorithms on Jetson TX1.  - Implemented TensorRT to enhance memory efficiency
 
 Institution: San Jose State University
-
+-------------------------------------------------------------------------------------
 Install Caffe in Right way !!
 Follow following commands to install Caffe on CPU.
-
 How to install Caffe on UBUNTU 14.04 CPU version
-
+-------------------------------------------------------------------------------------
 Update your system:
 sudo apt-get update
 sudo apt-get upgrade
@@ -132,7 +131,9 @@ make all
 make install
 make runtest
 
-
+------------------------- end -----------------
+Errors while installing Caffe:
+----------------------------------------------------------------------------------------------
 error after running “make all”:
 LD -o .build_release/lib/libcaffe.so.1.0.0-rc3
 /usr/bin/ld: cannot find -lcblas
@@ -146,6 +147,8 @@ error after make pycaffe:
 python/caffe/_caffe.cpp:10:31: fatal error: numpy/arrayobject.h: No such file or directory
  #include <numpy/arrayobject.h>
                                ^
-how to solve:
+how to solve above error:
 sudo apt-get install python-numpy
+------------------------------------------- end ------------------------------------------------
+
 
