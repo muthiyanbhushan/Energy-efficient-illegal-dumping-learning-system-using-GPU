@@ -54,13 +54,12 @@ sudo apt-get install python-pip
 sudo pip install --upgrade pip 
 
 Again run: 
-
 sudo apt-get update
 sudo apt-get upgrade
 
 Caffe’s Python interface works with Python 2.7. For protobuf support please install protobuf 3.0 alpha
 
- sudo apt-get install python-protobuf
+sudo apt-get install python-protobuf
 sudo apt-get update
 
 Go in caffe root directory
@@ -103,7 +102,6 @@ once you are set with the environment in caffe root directory RUN
 
 make pycaffe
 make distribute
-
 
 Caffe can be compiled with either Make or CMake. Make is officially supported while CMake is supported by the community.
 
