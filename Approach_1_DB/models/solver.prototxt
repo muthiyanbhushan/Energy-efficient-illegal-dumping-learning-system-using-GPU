@@ -1,0 +1,14 @@
+net: "/home/swetha/caffe/models/illegal_approach_1_alexnet/train_val.prototxt"
+test_iter: 50
+test_interval: 30
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.1
+stepsize: 30
+display: 20
+max_iter: 100
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 50
+snapshot_prefix: "/home/swetha/caffe/models/bvlc_alexnet/caffe_approach_1_alexnet_train"
+solver_mode: CPU
