@@ -1,0 +1,1 @@
+# examples folder in caffe
