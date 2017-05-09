@@ -93,7 +93,6 @@ for req in $(cat requirements.txt); do pip install $req; done
 If there are some errors you need to individually figure out the errors.
 Its better if you try and install dependencies one by one.
 
-
 After all the dependencies are installed go to caffe root directory and RUN
 
 export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH
@@ -171,8 +170,7 @@ There are generally three types of convolutional implementations. One uses Fouri
 The mathematical operation of convolution can be described by a simple element-wise matrix multiplication in the Fourier frequency domain. So, one can perform a fast Fourier transform on the inputs and on each kernel and multiply them element-wise to obtain feature maps – the outputs of a convolutional layer. During the backward pass, we do an inverse fast Fourier transform to receive gradients in the standard domain so that we can update the weights. Ideally, we store all these Fourier transforms in memory to save the time of allocating the memory during each pass. This can amount to a lot of extra memory and this is the chunk of memory that is added for the Fourier method for convolutional nets – holding all this memory is just required to make everything run smoothly.
 
 
-
-Why GPU are used for Deep learning and GPU to be used: -
+Why GPU are used for Deep learning and GPU to be used:-
 It turns out that the most important practical measure for GPU performance is memory bandwidth in GB/s, which measures how much memory can be read and written per second. Memory bandwidth is so important because almost all mathematical operations, such as matrix multiplication, dot product, sum, addition etcetera, are bandwidth bound, that is limited by how much numbers can be fetched from memory rather than how many calculation can be performed on those given numbers.
 Another important factor to consider however is that not all architectures are compatible with cuDNN. Since almost all deep learning libraries make use of cuDNN for convolutional operations this restricts the choice of GPUs to Kepler GPUs or better, that is GTX 600 series or above. On top of that, Kepler GPUs are generally quite slow. So this means you should prefer GPUs of the 900 or 1000 series for good performance.
 
