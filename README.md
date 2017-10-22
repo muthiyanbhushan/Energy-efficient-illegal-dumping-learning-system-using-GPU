@@ -6,6 +6,12 @@ Institution: San Jose State University
 Install Caffe in Right way !!
 How to install Caffe on UBUNTU 14.04 CPU version
 -------------------------------------------------------------------------------------
+Install OpenCV-3.1 from this link:
+
+opencv 3.1.0 link: http://docs.opencv.org/3.1.0/d7/d9f/tutorial_linux_install.html
+
+
+
 Update your system:
 sudo apt-get update
 sudo apt-get upgrade
