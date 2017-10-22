@@ -186,3 +186,10 @@ Cost efficient and cheap:  GTX 1060
 Cheapest card with no troubles: GTX 1060
 
 
+----------------------------------------------------------------------------
+Deploying:
+
+Run testing_illegal.py file for deployment.
+Steps: 1) Run this file from Caffe root directory.
+2) make appropriate changes in paths: "MODEL_FILE", "PRETRAINED", "IMAGE_FILE", "out.npy" file . Please make sure path is with respect to caffe root directory. 
+
